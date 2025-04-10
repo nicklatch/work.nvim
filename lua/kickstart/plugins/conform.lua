@@ -24,13 +24,15 @@ return {
           return nil
         else
           return {
-            timeout_ms = 500,
+            timeout_ms = 2500,
             lsp_format = 'fallback',
           }
         end
       end,
       formatters_by_ft = {
         lua = { 'stylua' },
+        php = { 'pint' },
+        blade = { 'blade-formatter' },
         -- Conform can also run multiple formatters sequentially
         -- python = { "isort", "black" },
         --
