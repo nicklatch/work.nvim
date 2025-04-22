@@ -7,7 +7,7 @@ return {
       'MunifTanjim/nui.nvim',
       'kevinhwang91/promise-async',
     },
-    cmd = { 'Laravel' },
+    cmd = { 'Artisan', 'Composer', 'Laravel', 'Npm' },
     keys = {
       { '<leader>la', ':Laravel artisan<cr>' },
       { '<leader>lr', ':Laravel routes<cr>' },
