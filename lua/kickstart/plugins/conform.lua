@@ -32,7 +32,7 @@ return {
       formatters_by_ft = {
         lua = { 'stylua' },
         php = { 'pint' },
-        blade = { 'blade-formatter' },
+        blade = { 'blade-formatter', 'pint' },
         -- Conform can also run multiple formatters sequentially
         -- python = { "isort", "black" },
         --

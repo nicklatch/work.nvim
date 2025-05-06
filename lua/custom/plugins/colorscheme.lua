@@ -6,12 +6,24 @@ return {
   --     vim.cmd.colorscheme 'oxocarbon'
   --   end,
   -- },
+  -- {
+  --   'catppuccin/nvim',
+  --   name = 'catppuccin',
+  --   priority = 1000,
+  --   init = function()
+  --     vim.cmd.colorscheme 'catppuccin'
+  --   end,
+  -- },
   {
-    'catppuccin/nvim',
-    name = 'catppuccin',
+    'uloco/bluloco.nvim',
+    lazy = false,
     priority = 1000,
+    dependencies = { 'rktjmp/lush.nvim' },
+    config = function()
+      style = 'dark'
+    end,
     init = function()
-      vim.cmd.colorscheme 'catppuccin'
+      vim.cmd.colorscheme 'bluloco'
     end,
   },
 }

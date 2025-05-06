@@ -15,12 +15,7 @@ return {
     },
     event = { 'VeryLazy' },
     opts = {
-      lsp_server = 'intelephense',
-      features = {
-        pickers = {
-          provider = 'telescope',
-        },
-      },
+      lsp_server = 'phpactor',
     },
     config = true,
   },
