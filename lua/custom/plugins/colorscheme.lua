@@ -23,7 +23,7 @@ return {
       style = 'dark'
     end,
     init = function()
-      vim.cmd.colorscheme 'bluloco'
+      vim.cmd.colorscheme 'tokyonight-moon'
     end,
   },
 }

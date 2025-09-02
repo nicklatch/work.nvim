@@ -24,11 +24,11 @@ vim.lsp.handlers['textDocument/publishDiagnostics'] = function(err, result, ctx)
 end
 
 return {
-  -- vim.filetype.add {
-  --   pattern = {
-  --     ['.*%.blade%.php'] = 'php',
-  --   },
-  -- },
+  vim.filetype.add {
+    pattern = {
+      ['.*%.blade%.php'] = 'php',
+    },
+  },
   vim.keymap.set('i', ';;', '<Esc>A;<Esc>'),
   vim.keymap.set('n', ';;', '<Esc>A;<Esc>'),
   vim.keymap.set('i', ',,', '<Esc>A,<Esc>'),
